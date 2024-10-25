@@ -1,0 +1,1 @@
+source "/home/relow/.deno/env.fish"
