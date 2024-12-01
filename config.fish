@@ -1,5 +1,5 @@
 function fish_greeting
-  #   pfetch
+    nvm use latest >/dev/null 2>&1
 end
 
 
@@ -25,7 +25,7 @@ function fish_prompt
     printf "%s" "$hostname"
     set_color magenta
     printf " %s" "$PWD"
-    
+
     if test -n "$git_branch"
         set_color cyan
         printf " (%s)" "$git_branch"
@@ -36,16 +36,16 @@ function fish_prompt
     set_color normal
 end
 
-abbr n "nvim"
+abbr n nvim
 abbr ls "eza --icons "
 abbr l "eza --icons "
 abbr ll "eza --icons -ahl"
 abbr lt "eza --tree"
 
-abbr cat "bat"
-abbr cd "z"
+#abbr cat "bat"
+abbr cd z
 
-abbr g "git"
+abbr g git
 abbr gs "git status"
 abbr gp "git pull"
 abbr gps "git push"
@@ -57,17 +57,17 @@ abbr install "sudo pacman -S"
 abbr remove "sudo pacman -Rns"
 
 abbr ss "sudo systemctl"
-abbr s "sudo"
+abbr s sudo
 
 alias rm "rm -v"
 alias cp "cp -v"
 alias mv "mv -v"
-alias c "clear"
+alias c clear
 
 alias config "git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
 
 abbr tn "tmux new -As (pwd | sed 's/.*\///g')"
-abbr t "tmux"
+abbr t tmux
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
@@ -80,6 +80,12 @@ set --export EDITOR nvim
 
 fish_vi_key_bindings
 
-
 zoxide init fish | source
 
+
+# pnpm
+set -gx PNPM_HOME "/home/relow/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

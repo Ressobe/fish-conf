@@ -1,6 +1,34 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_cat:bat
+SETUVAR _fish_abbr_cd:z
+SETUVAR _fish_abbr_g:git
+SETUVAR _fish_abbr_ga:git\x20add
+SETUVAR _fish_abbr_gc:git\x20commit\x20\x2dm\x20
+SETUVAR _fish_abbr_gp:git\x20pull
+SETUVAR _fish_abbr_gps:git\x20push
+SETUVAR _fish_abbr_gs:git\x20status
+SETUVAR _fish_abbr_install:sudo\x20pacman\x20\x2dS
+SETUVAR _fish_abbr_l:eza\x20\x2d\x2dicons\x20
+SETUVAR _fish_abbr_ll:eza\x20\x2d\x2dicons\x20\x2dahl
+SETUVAR _fish_abbr_ls:eza\x20\x2d\x2dicons\x20
+SETUVAR _fish_abbr_lt:eza\x20\x2d\x2dtree
+SETUVAR _fish_abbr_n:nvim
+SETUVAR _fish_abbr_remove:sudo\x20pacman\x20\x2dRns
+SETUVAR _fish_abbr_s:sudo
+SETUVAR _fish_abbr_ss:sudo\x20systemctl
+SETUVAR _fish_abbr_t:tmux
+SETUVAR _fish_abbr_tn:tmux\x20new\x20\x2dAs\x20\x28pwd\x20\x7c\x20sed\x20\x27s/\x2e\x2a\x5c///g\x27\x29
+SETUVAR _fish_abbr_update:sudo\x20pacman\x20\x2dSyu\x20\x2d\x2dnoconfirm
+SETUVAR _fish_abbr_za:zoxide\x20add
+SETUVAR _fish_abbr_zq:zoxide\x20query
+SETUVAR _fish_abbr_zqi:zoxide\x20query\x20\x2di
+SETUVAR _fish_abbr_zr:zoxide\x20remove
+SETUVAR _fisher_jorgebucaran_2F_fisher_files:\x7e/\x2econfig/fish/functions/fisher\x2efish\x1e\x7e/\x2econfig/fish/completions/fisher\x2efish
+SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
+SETUVAR _fisher_plugins:jorgebucaran/fisher\x1ejorgebucaran/nvm\x2efish
+SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
